@@ -2,6 +2,7 @@
 
 from application import app, db
 from NLPModule import seek_answer
+from flask import Flask, session, request, jsonify
 
 
 @app.route('/getAnswer', methods = ['POST'])
