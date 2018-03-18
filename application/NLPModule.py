@@ -132,7 +132,7 @@ def seek_answer(question):
                 break
 
             retCode = 0
-            retMsg = ans.strip()
+            retMsg = ans.strip().encode('utf-8')
 
         except Exception as e:
             retMsg = e.message
