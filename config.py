@@ -18,4 +18,3 @@ UNKNOWN_MSG = '抱歉，目前我还没学会回答这个问题哦~' # 收到不
 NEED_GROUP = '请在群聊里问我哦~' # 只支持群聊
 NEED_PRIVATE = '请私下问我哦~'
 
-app.config['JSON_AS_ASCII'] = False

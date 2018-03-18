@@ -9,6 +9,7 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = SQLALCHEMY_DATABASE_URI
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 app.secret_key = SECRET_KEY
+app.config['JSON_AS_ASCII'] = False
 db = SQLAlchemy(app)
 
 from application import router, model
