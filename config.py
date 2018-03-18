@@ -1,6 +1,8 @@
 # -*- coding=utf8 -*-
 
 import os
+import application
+
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'wisemen.db')
@@ -16,3 +18,5 @@ ACCEPT_GREETING = '你好，请问有乜帮到你？' # 自动添加好友后的
 UNKNOWN_MSG = '抱歉，目前我还没学会回答这个问题哦~' # 收到不支持的类型
 NEED_GROUP = '请在群聊里问我哦~' # 只支持群聊
 NEED_PRIVATE = '请私下问我哦~'
+
+application.config['JSON_AS_ASCII'] = False
