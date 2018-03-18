@@ -68,7 +68,11 @@ def divide_entities(question):
     return phrase
 
 def seek_answer(question):
-    questionDecoded = question.strip() # .decode('utf-8')
+    #try:
+    questionDecoded = question.strip().encode('utf-8')
+    #except:
+    #    print "PASS encoded check"
+        # pass
     intent, entityList = predict_intent(questionDecoded)               # 获取语义判断
     if intent != 'Seasons':
         entityList = divide_entities(questionDecoded)
